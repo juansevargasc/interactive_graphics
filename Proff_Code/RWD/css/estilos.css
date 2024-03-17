@@ -1,0 +1,329 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Ancizar Sans-regular;
+    src: url('../fonts/Ancizar Sans-Regular.otf');
+}
+@font-face {
+    font-family: Ancizar Serif-bold;
+    src: url('../fonts/Ancizar Serif-Bold.otf');
+}
+body {
+    background-color: #FFEECC;  /* define un color de fondo para todas las páginas */
+}
+.body2 {
+    background-color: #D9A444;  /* este es el mismo color de la parte de abajo de la foto*/
+	background-image: url(../imagenes/potrero.jpg);
+	background-repeat: repeat-x;  /* repite la imagen en horizontal hasta completar la ventana*/
+}
+.fondo {    /* este elemento agrupa todo el conjunto y lo centra en la ventana*/
+	background-color: #FFEECC;
+    max-width: 840px;
+    margin: auto;
+}
+.fondo2 {
+    background-color: #D9A444;
+    max-width: 840px;
+    margin: auto;
+	text-align: center;
+	align-content: center;
+}
+    .contenido {
+	max-width: 840px;
+    margin-left: 10px; 
+    margin-top: 20px;    
+}
+a:link {
+	text-decoration: none; /* evita que se subrayen los vínculos*/
+	color:#FFFFFF;           /* vínculos grises y no azules por defecto*/
+}
+a:visited {
+	color:#666666;
+	text-shadow: 1px 1px #000000;
+}
+h1 {
+	font-family: Ancizar Serif-bold;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: bold;
+	color: #BB3300;
+	text-shadow: 1px 1px #000000;
+	text-align: center;
+	min-width:200px;
+    max-width:840px;
+    padding-top: 10px;
+}
+h2 {
+	font-family: Ancizar Serif-bold;
+	font-size: 24px;
+	font-style: normal;
+    font-weight: normal;
+	color: #333333;
+	text-align: left;
+    margin-left: 20px;
+    max-width: 300px;
+}
+.menunav {
+	position:relative;
+    text-align: center;
+	left:10px;
+	float:center;
+	margin: auto;
+	margin-bottom: 30px;
+}
+.botonMenu {
+	font-family: Ancizar Sans-regular;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	color: #666666;	
+	text-align: center;
+	width: 142px;  /* (142 + 10 + 8 = 160) para completar el largo del botón mas el padding*/
+	background-image: url(../imagenes/boton1.jpg); /* la imagen mide 160px*/
+	padding:5px 10px 6px 8px;  /* arriba, derecha, abajo, izquierda */
+	float: left;
+}
+    .botonMenu:hover {
+	color:#FFFFFF;
+	text-shadow: 1px 1px #000000;	
+	background-image: url(../imagenes/boton2.jpg); /* cambia la imagen al pasar el cursor*/
+	cursor:pointer;
+}
+/* elementos del menu desplegable*/
+#btn-menu {
+    display: none;   /* oculta el checkbox cuando no es necesario*/
+} 
+header {
+    width: 100%;
+	z-index: 10;	/* coloca el checkbox por encima del contenido*/
+} 
+header label {     /* coloca el checkbox en un lugar y tamaño exactos*/
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+} 
+header label:hover {
+    cursor: pointer;    /* cambia el cursor sobre el checkbox para indicar la interacción*/
+}
+    .menu ul{
+    margin-left: 20px; 
+    list-style: none;     /* para evitar los bullit list en la lista*/
+    padding: 0;
+    display: flex;
+}
+    .menu li{
+    background-image: url(../imagenes/boton1.jpg);
+    background-repeat: no-repeat; /* evita que se repita la imagen aunque cambie el tamaño*/
+    width: 160px;
+    height: 30px;
+    font-size: 14px;
+	text-align: center;
+    color: #666666;
+    text-decoration: none; 
+    margin-bottom: 10px;
+} 
+    .menu li a {
+    display: block;
+    font-family: Ancizar Sans-regular;
+    text-align: center;
+    color: #666666;
+    text-decoration: none;    
+    padding-top:6px;    
+}
+    .menu li a:hover {
+    color:#FFFFFF;
+	text-shadow: 1px 1px #000000;	
+	background-image: url(../imagenes/boton2.jpg);
+    background-repeat: no-repeat;
+    height: 30px;
+    padding-top:6px;
+}  
+    .texto {
+	font-family: Ancizar Sans-regular;
+	font-size: 16px;
+    line-height: 1.3;
+	font-style: normal;
+	text-align: justify;
+	min-width:200px; /* ancho de columna variable pero dentro de un rango*/
+    max-width:360px;
+    margin-top:20px;
+	margin:25px;
+	float:left;
+}
+    .texto2 {
+	font-family: Ancizar Sans-regular;
+	font-size: 16px;
+    line-height: 1.3;
+	font-style: normal;
+	text-align: justify;
+	width:550px;     /* ancho de columna fijo*/
+	margin:15px;
+	float:left;
+}
+    .texto3 {
+	font-family: Ancizar Sans-regular;
+	font-size: 14px;
+    line-height: 1.5;
+	font-style: normal;
+	text-align: justify;
+    width:200px;
+	margin:15px;
+	float:left;
+}
+    .foto {
+	position: relative;	
+	margin-left: 10px;
+	margin-top: 10px;	
+    margin-bottom: 6px;
+	float:left;
+    width: 100px;
+    height: 100px;
+}
+.tres {
+	position: relative;
+	float: left;
+	top: 4px;
+	box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5); /* r, g, b, alfa (transparencia) */
+	margin-right: 18px;
+	margin-bottom: 15px;
+}
+
+/* cuando la ventana mida menos de 860px */
+@media only screen and (max-width: 860px) {
+    body {
+    background-color: #D9A444;
+}
+    .menunav {
+    max-width:500px;  /* esto es para que la primera fila tenga máximo tres botones*/
+}
+    .foto {
+	position: relative;
+	margin-left: 6px;
+    margin-bottom: 6px;
+	float:left;
+    width: 80px;
+    height: 80px;
+}	
+    h1{
+	font-family: Ancizar Sans-regular;
+	font-size: 30px;
+	text-align: center;
+	color: #FFEEAA;
+}
+    h2 {
+	font-family: Ancizar Serif-bold;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFEEAA;
+    text-shadow: 1px 1px #000000;    
+	text-align: left;
+    max-width: 250px;
+}
+    .fondo {  
+    background-color: #D9A444;
+    min-width: 500px;
+    max-width: 860px;
+    margin: auto;  /* márgenes izquierdo y derecho iguales para centrar*/
+}
+    .contenido {
+	max-width: 840px;
+    margin-top: 40px;    
+}
+    .texto {
+	font-size: 17px;
+	color:#FFFFFF;
+    text-align: left;
+    line-height: 1.4;
+    max-width:600px;
+	margin:1px;
+    margin-right:10px;
+    margin-top:20px;
+}
+    .texto2 {
+	font-size: 17px;
+	color:#FFFFFF;
+    text-align: left;
+    line-height: 1.4;
+    min-width:550px;
+    max-width: 700px;
+	margin:1px;
+    margin-right:10px;    
+}
+    .texto3 {
+	font-size: 17px;
+	color:#FFFFFF;
+    text-align: left;
+    line-height: 1.4;
+    min-width:550px;
+    max-width: 700px;
+	margin:1px;
+    margin-right:10px;    
+}
+}
+
+/* cuando la ventana mida menos de 640px */
+@media only screen and (max-width: 640px) {
+    body {
+    background-color: #D9A444;
+}
+    .texto {
+    font-family: Ancizar Sans-regular;
+	font-size: 18px;
+    line-height: 1.7; /* se recomienda aumentar el interlineado y no usar serifas en pantallas pequeñas*/
+    width:90%;
+    min-width:250px;
+}
+    .texto2 {
+    font-family: Ancizar Sans-regular;
+	font-size: 18px;
+    line-height: 1.7;
+    width:90%;
+    min-width:250px;
+}
+    .texto3 {
+    font-family: Ancizar Sans-regular;
+	font-size: 18px;
+    line-height: 1.7;
+    width:90%;
+    min-width:250px;
+}
+    .menunav {
+    max-width:460px;  /* esto es para que la primera fila tenga máximo dos botones*/
+}
+     header label{
+        display: block; /* se muestra el checkbox cuando se reduce la ventana*/
+    } 
+    .menu {
+        position: fixed;  /* sostiene la posición aunque se haga scroll en el contenido */
+        background: rgba(0.5, 0.5, 0.5, 0.2); /* rojo, verde, azul, alpha (transparencia) */
+		z-index: 30; /* para asegurar que el menu esta por encima de todo lo demás*/
+        width: 40%; /* se refiere al ancho del fondo del menu y no a los botones */
+        margin-left: -60%; /* se oculta porque se coloca por fuera de la ventana*/
+		margin-top: 4px;
+        transition: all 2s;   /* la animación de desplegar el menu dura 1 segundo*/
+    } 
+    .menu ul {
+        flex-direction: column;  /* se despliega en sentido vertical*/
+    } 
+    .menu li {
+    font-family: Ancizar Sans-regular;
+    }
+    #btn-menu:checked ~ .menu {  /* el checkbox controla las dos posiciones del menu */
+        margin: 1px; 
+    } 
+    h1 {
+	font-size: 26px;
+}
+    .foto {
+	position: relative;
+	margin-left: 3px;
+    margin-bottom: 3px;
+	float:left;
+    width: 60px;
+    height: 60px;
+}
+}

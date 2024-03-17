@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+@font-face { 
+    font-family: Ancizar Sans-regular;                /* define una fuente */          
+    src: url('fonts/Ancizar Sans-Regular.otf');     /* indica su ubicación */
+}
+body {     /* los estilos aplicados a una etiqueta valen para todos los casos */                    
+	background-color:#0066CC;                    
+	background-image: url(imagenes/peces.jpg);
+	background-repeat: repeat-x; /* repite la imagen solo en horizontal */
+}
+.contenido {     /* contenedor central */
+    width: 660px;
+    margin: auto;   
+}
+.menunav {     /* estilo para el menu de navegación */
+	width: 660px;   
+	margin: auto;
+}
+.botonMenu {       /* estilo para cada botón del menu de navegación */
+	font-family: Ancizar Sans-regular;   /* solo si se suministra el archivo de la fuente */
+    color:#666666;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	width: 142px;
+	background-image: url(imagenes/boton1.jpg);
+	padding:5px 10px 6px 8px;
+	float: left;
+	cursor: pointer;
+}
+.botonMenu:link {
+	color:#555555;
+	text-shadow: 1px 1px #000000;	
+} 
+.botonMenu:hover {
+	color:#FFFFFF;
+	text-shadow: 1px 1px #000000;	
+	background-image: url(imagenes/boton2.jpg);
+	cursor:pointer;
+} 
+h1{     /* estilo para los titulares */
+	font-family: Arial, Helvetica, sans-serif; /* la fuente se asigna según disponibilidad */
+	color:#FFFFFF;
+	font-size: 36px;
+	font-weight: bold;
+	text-shadow: 1px 1px #000000;
+	text-align: left;
+	max-width: 640px; /* ancho máximo del párrafo */
+	margin:auto;    /* margen igual a izquierda y derecha */       
+	margin-bottom:10px;
+} 
+h1:link {
+	color:#FFFFFF;
+	cursor: pointer;
+	text-decoration: none;  /* para que no subraye los vínculos en los titulares*/ 
+}
+h2 {
+	font-family: Ancizar Sans-regular;  /* solo si se suministra el archivo de la fuente */
+	color:#2222FF;
+	font-size: 24px;
+	font-weight: normal;
+	text-shadow: 1px 1px #000000;
+	text-align:left;
+    margin: auto;
+	max-width: 640px;
+	padding:44px 10px 2px 10px;  /* arriba, derecha, abajo, izquierda */
+}
+h6 {
+	color:#FFFFFF;
+    text-shadow: 1px 1px #000000;
+    font-size: 10px;
+    text-align:left;
+    margin-left:10px;
+    margin-top: 626px;
+}
+a:link {
+	color: #FF99FF;
+	text-decoration:none;  
+}
+a:hover {   /* indica el estilo cuando el cursor está sobre el elemento */  
+	color: #FF00FF;
+    text-shadow: 1px 1px #000000;
+}
+a:visited {     /* indica el estilo cuando el vínculo ya fue visitado */
+	color: #EEEEEE;
+}
+    .foto {
+	position: relative;	
+	margin-left: 10px;	
+    margin-bottom: 10px;
+	float:left;
+    width: 100px;
+    height: 100px;
+}
+.uno {
+	position: relative;
+	max-width:520px;
+    left: 10px;
+	font-family: Ancizar Sans-regular;  
+	font-size: 16px;
+	font-weight: normal;
+	text-align: justify;
+	color:#FFFFFF;
+	text-shadow: 1px 1px #000000;
+}
+.dos {
+	position: relative;
+	max-width:680px;
+	top: 20px;
+	margin: auto;
+}
+.tres {
+	position: relative;
+	float: left;
+	top: 10px;
+	box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5); /* r, g, b, alfa (transparencia) */
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.cuatro {
+	position: relative;
+	float: left;
+	top: 20px;
+    max-width:600px;
+	box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.5); /* r, g, b, alfa (transparencia) */
+	margin-left: 50px;
+}
+table{
+    width:630px;
+    left: -10px;
+}
+th {   /* estilo para los encabezados de la tabla */  
+	background-color: #663399;
+	color: #FFFF00;
+	font-weight: normal;
+	text-align: center;
+	padding: 10px 6px 4px 10px;  /* arriba, derecha, abajo, izquierda */
+	border-style:outset;                 /* borde bicelado */
+	border-size:1px;
+	border-color: #663399;
+}
+td {        /* estilo para las celdas de la tabla */ 
+	background-color: #333399;
+	color: #DDDDFF;
+	padding: 10px 18px 10px 10px;  
+}
+ul {   /* estilo para las listas */       
+	list-style-type: none;    /* quita los "bullit lists" de las listas  */ 
+	margin: -2px 0px -2px -40px;  /* arriba, derecha, abajo, izquierda */
+}

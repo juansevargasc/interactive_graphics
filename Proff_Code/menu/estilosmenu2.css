@@ -1,0 +1,30 @@
+
+.menu ul ul {
+    display: none;
+    margin-top:10px;
+}
+.menu ul ul li {
+    display: list-item;
+    background:  #886666;
+	list-style-type: none;
+    margin-top: 4px;
+	margin-left:-35px;
+}
+.menu li:hover > ul {
+    display: block;
+    z-index: 4;
+}
+.img_gif {  
+   max-width: 600px;
+    position: fixed;
+    margin-top: 140px;
+    margin-left: 200px;
+    z-index:2;
+}
+.img_png { 
+    max-width: 600px;
+    position: fixed;
+    margin-top: 140px;
+    margin-left: 200px;
+    z-index:2;
+}
