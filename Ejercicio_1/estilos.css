@@ -1,3 +1,4 @@
+/*Aporte: Uso de flexbox para mejorar la empaque*/
 @charset "UTF-8"; 
 
 @font-face { 
@@ -19,9 +20,8 @@ body {
 
 h1 a {
     text-decoration: none; /* Elimina el subrayado de los enlaces */
-    color: #333; /* Cambia el color del texto de los enlaces */
+    color: #333; 
 }
-
 .menunav {
     display: flex; /* Utiliza flexbox para organizar los elementos del menú */
     justify-content: center; /* Centra los elementos del menú horizontalmente */
@@ -82,19 +82,19 @@ h6 {
     margin: 20px auto; /* Centra la imagen de portada y añade un margen */
 }
 .image-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Usa flexbox para un diseño flexible */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos igualmente */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
 }
 table {
-width: 100%;
-border-collapse: collapse;
+    width: 100%; /* La tabla ocupa el 100% del ancho disponible */
+    border-collapse: collapse; /* Colapsa los bordes de la tabla para que sea un solo borde */
 }
 th, td {
-border: 1px solid #ddd;
-padding: 8px;
-text-align: left;
+    border: 1px solid #ddd; /* Aplica un borde sólido de 1px y color #ddd a celdas y encabezados */
+    padding: 8px; /* Añade un relleno de 8px dentro de las celdas */
+    text-align: left; /* Alinea el texto a la izquierda en las celdas y encabezados */
 }
 th {
-background-color: #f2f2f2;
+    background-color: #f2f2f2; /* Establece el color de fondo de los encabezados de la tabla */
 }  
