@@ -1,84 +1,89 @@
-@charset "UTF-8";
+@charset "UTF-8"; 
 
 @font-face { 
-    font-family: Ancizar Sans-regular;             
-    src: url('fonts/Ancizar Sans-Regular.otf'); 
+    font-family: Ancizar Sans-regular; 
+    src: url('fonts/Ancizar Sans-Regular.otf');
 }
 body {                         
-	background-color:#2266BB;
-    background-image: url(imagenes/road2.jpg);
+    background-image: url(imagenes/road2.jpg); 
 	background-repeat: repeat-x;
     font-family: Ancizar Sans-regular, Helvetica, Arial, sans-serif;
 }
 .contenido {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #e2d99a;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Establece el ancho del contenido al 80% del contenedor */
+    margin: 0 auto; /* Centra el bloque en la página */
+    padding: 20px; /* Añade relleno alrededor del contenido */
+    background-color: #e2d99a; /* Establece el color de fondo del contenido */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra alrededor del bloque */
 }
 
 h1 a {
-    text-decoration: none;
-    color: #333;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #333; /* Cambia el color del texto de los enlaces */
 }
 
 .menunav {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
+    display: flex; /* Utiliza flexbox para organizar los elementos del menú */
+    justify-content: center; /* Centra los elementos del menú horizontalmente */
+    padding: 20px 0; /* Añade padding vertical solamnete al menú */
 }
 
 .botonMenu {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 0 10px;
-    background-color: #007bff;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    display: inline-block; /* Hace que los botones sean elementos en línea pero permitiendo dimensiones */
+    padding: 10px 20px; /* Añade relleno dentro de los botones */
+    margin: 0 10px; /* Añade un margen horizontal entre los botones */
+    background-color: #4d56f8; /* Establece el color de fondo de los botones */
+    color: #ffffff; /* Cambia el color del texto dentro de los botones */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    border-radius: 5px; /* Redondea las esquinas de los botones */
+    transition: background-color 0.3s ease; /* Añade una transición suave al cambiar el color de fondo */
 }
 
 .botonMenu:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Cambia el color de fondo de los botones al pasar el ratón */
 }
 
 h2 {
-    color: #333;
-    text-align: center;
+    color: #333; /* Cambia el color del texto de los encabezados h2 */
+    text-align: center; /* Centra el texto de los encabezados h2 */
 }
 
 .uno {
-    margin: 20px 0;
+    margin: 20px 0; /* Añade un margen vertical a la clase .uno */
 }
 
 .tres {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%; /* Make sure the images are responsive */
-    height: auto;
+    display: block; /* Hace que los elementos con clase .tres se muestren como bloques */
+    margin: 0 auto; /* Centra los elementos con clase .tres horizontalmente */
+    max-width: 100%; /* Asegura que los elementos no superen el 100% del ancho */
+    height: auto; /* Ajusta la altura automáticamente */
 }
 
 h6 {
-    text-align: center;
-    color: #666;
-    margin-top: 40px;
+    text-align: center; /* Centra el texto de los encabezados h6 */
+    color: #666; /* Cambia el color del texto */
+    margin-top: 40px; /* Añade un margen superior */
 }
 
 .titulo {
-    font-size: 46px; /* Adjust the font size as needed */
-    margin-bottom: 20px;
-    text-align: center; /* Center the title for a better visual effect */
+    font-size: 46px; /* Ajusta el tamaño de la fuente del título */
+    margin-bottom: 20px; /* Añade un margen inferior */
+    text-align: center; /* Centra el título */
 }
 
 .titulo a {
-    color: #007bff; /* Use the same color as your buttons for consistency */
+    color: #007bff; /* Cambia el color de los enlaces dentro de .titulo */
 }
 
 .portada {
-    display: block;
-    max-width: 100%; /* Ensure it's responsive */
-    height: auto;
-    margin: 20px auto; /* Center the image and add some margin for spacing */
+    display: block; /* Hace que la imagen de portada se muestre como bloque */
+    max-width: 100%; /* Asegura que la imagen sea responsive y no supere el 100% del ancho */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    margin: 20px auto; /* Centra la imagen de portada y añade un margen */
 }
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
