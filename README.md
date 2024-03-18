@@ -6,13 +6,15 @@ Gráfica Interactiva SIA: 1000075
 profesor: Carlos Delgado
 cadelgador@unal.edu.co
 Sesiones por Meet los lunes de 6:00 pm. a 8:00 pm.
-meet.google.com/jvy-rxgn-rsq
+
+
 El curso Gráfica interactiva es una propuesta pedagógica que convoca a
 estudiantes de varias sedes de la Universidad Nacional de Colombia con un
 interés común por la utilización de los lenguajes multimediales e interactivos.
 Aprovechando las posibilidades que ofrecen las nuevas tecnologías de
 comunicación, estudiantes de todo el país comparten este espacio virtual de
 clase.
+
 El curso Gráfica interactiva consiste en una serie de charlas y ejercicios
 sobre los lenguajes de programación que se emplean para crear las imágenes
 que interactúen con el usuario en los diferentes dispositivos de la comunicación
@@ -40,8 +42,8 @@ lunes, pero asistir a las sesiones de videochat es la oportunidad de interactuar
 con el docente en tiempo real. Los lunes las explicaciones se ajustan de acuerdo
 a las preguntas que hacen los asistentes y se puede opinar sobre los temas
 tratados. Las transmisiones son todos los lunes de 6:00 a 8:00 pm.
-En la plataforma Moodle https://micampus.unal.edu.co/
-encuentra publicados:
+En la plataforma Moodle https://micampus.unal.edu.co/ encuentra publicados:
+
 • Vínculo directo a los contenidos
 • Los documentos para descargar
 • Ejemplos de ejercicios realizados en semestres anteriores
