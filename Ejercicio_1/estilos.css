@@ -1,0 +1,101 @@
+/*Aporte: 
+- Flexbox: Uso de flexbox para mejorar la empaque*
+- border-radius */
+@charset "UTF-8"; 
+
+@font-face { 
+    font-family: Ancizar Sans-regular; 
+    src: url('fonts/Ancizar Sans-Regular.otf');
+}
+body {                         
+    background-image: url(imagenes/road2.jpg); 
+	background-repeat: repeat-x;
+    font-family: Ancizar Sans-regular, Helvetica, Arial, sans-serif;
+}
+.contenido {
+    width: 80%; /* Establece el ancho del contenido al 80% del contenedor */
+    margin: 0 auto; /* Centra el bloque en la página */
+    padding: 20px; /* Añade relleno alrededor del contenido */
+    background-color: #e2d99a; /* Establece el color de fondo del contenido */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra alrededor del bloque */
+}
+
+h1 a { /*Solo aplica para los elementos anchor a dentro de una etiqueta h1*/
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #333; 
+}
+.menunav {
+    display: flex; /* Utiliza flexbox para organizar los elementos del menú */
+    justify-content: center; /* Centra los elementos del menú horizontalmente */
+    padding: 20px 0; /* Añade padding vertical solamnete al menú */
+}
+
+.botonMenu {
+    display: inline-block; /* Hace que los botones sean elementos en línea pero permitiendo dimensiones */
+    padding: 10px 20px; 
+    margin: 0 10px; 
+    background-color: #4d56f8;
+    color: #ffffff; /* Cambia el color del texto dentro de los botones */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    border-radius: 5px; /* Redondea las esquinas de los botones */
+}
+
+.botonMenu:hover {
+    background-color: #0056b3; /* Cambia el color de fondo de los botones al pasar el ratón */
+}
+
+h2 {
+    color: #333;
+    text-align: center; /* Centra el texto de los encabezados h2 */
+}
+
+.uno {
+    margin: 20px 0; /* Añade un margen vertical a la clase .uno */
+}
+
+.tres {
+    display: block; /* Hace que los elementos con clase .tres se muestren como bloques */
+    margin: 0 auto; 
+    max-width: 100%;
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+h6 {
+    text-align: center; /* Centra el texto de los encabezados h6 */
+    color: #666;
+    margin-top: 40px; /* Añade un margen superior */
+}
+
+.titulo {
+    font-size: 46px; /* Ajusta el tamaño de la fuente del título */
+    margin-bottom: 20px; /* Añade un margen inferior */
+    text-align: center; /* Centra el título */
+}
+
+.titulo a {
+    color: #007bff;
+}
+
+.portada { /*Creado solo para la imagen de portada*/
+    display: block; /* Hace que la imagen de portada se muestre como bloque */
+    max-width: 100%; /* Que la imagen no supere el 100% del ancho */
+    height: auto; 
+    margin: 20px auto; /* Centra la imagen de portada y añade un margen */
+}
+.image-container { /* Creado principalmente para las imágenes lado a lado en historia*/
+    display: flex; /* Usa flexbox para un diseño flexible */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos igualmente */
+    align-items: center;
+}
+table {
+    width: 100%; /* La tabla ocupa el 100% del ancho disponible */
+    border-collapse: collapse; /* Colapsa los bordes de la tabla para que solo quede uno */
+}
+th, td {
+    border: 1px solid #f9faf9; /* Aplica un borde sólido de 1px y blanco a encabezdos */
+    padding: 8px; /* Añade un relleno de 8px dentro de las celdas */
+    text-align: left; /* Alinea el texto a la izquierda en las celdas y encabezados */
+}
+th {
+    background-color: #c8c7f4; /* Establece el color de fondo de los encabezados de la tabla */
+}  

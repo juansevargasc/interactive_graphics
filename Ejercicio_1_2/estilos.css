@@ -11,63 +11,66 @@
 }
 
 .checkbox-hamburguesa {
-    display: none; /* Hide the actual checkbox */
+    display: none; /* Esconder el ícono hamburguesa */
 }
 
 /* Teléfonos */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+    /* Muestra el ícono de menú (hamburguesa) */
     .icono-hamburguesa {
-        display: block; /* Show the icon */
+        display: block; /* Muestra el ícono */
     }
 
-    /* Initially hide the menu in mobile view */
+    /* Inicialmente oculta el menú en vista móvil */
     .menunav {
-        display: none; /* Force hide the menu container by default */
+        display: none; /* Oculta el contenedor del menú por defecto */
     }
 
-    /* Display the menu container when checkbox is checked */
+    /* Muestra el contenedor del menú cuando el checkbox está marcado */
     .checkbox-hamburguesa:checked + .menunav,
-    .checkbox-hamburguesa:checked ~ .menunav { /* Added ~ selector for general sibling */
-        display: block; /* Force display the menu */
+    .checkbox-hamburguesa:checked ~ .menunav { /* ~ Significa selecciona todos los elementos .menunav que son hermanos de la etiqueta .checkbox-hamburguesa:checked,  */
+        display: block; /* Visualización del menú */
     }
 
+    /* Estiliza los enlaces dentro del menú para que se apilen */
     .menunav a {
-        display: block; /* Stack the links */
-        width: 100%; /* Adjust width to 100% */
-        padding: 10px; /* Adjust padding */
-        border-bottom: 1px solid #cccccc; /* Optional: add a separator between links */
+        display: block; /* Stack de los enlaces */
+        width: 100%; /* Ajusta el ancho al 100% */
+        padding: 10px; /* Ajusta el relleno */
+        border-bottom: 1px solid #cccccc; /* Separador entre los enlaces */
     }
 }
 
 /* Tablet */
-@media (min-width: 769px) and (max-width: 1024px) {
-    /* Styles for tablets go here */
+@media (min-width: 801px) and (max-width: 1200px) {
+    /* Los estilos específicos para tablets van aquí */
     body {
-        /* Example: Adjust the font size for tablet devices */
+        /* Ejemplo: Ajusta el tamaño de fuente para dispositivos tablet */
         font-size: 16px;
     }
-    /* Adjust the layout, font sizes, or other styles as needed for tablet view */
+    /* Ajusta el layout, tamaños de fuente, o cualquier otro estilo necesario para la vista de tablet */
     .menunav {
         display: flex; /* Utiliza flexbox para organizar los elementos del menú */
         justify-content: center; /* Centra los elementos del menú horizontalmente */
-        padding: 20px 0; /* Añade padding vertical solamnete al menú */
+        padding: 20px 0; /* Padding vertical solo al menú */
     }
 }
 
-/* Desktops (Computadores de Escritorio) */
-@media (min-width: 1025px) {
-    /* Styles for desktops go here */
+/* Desktops (Computador de Escritorio) */
+@media (min-width: 1200px) {
+    /* Los estilos específicos para computadoras de escritorio van aquí */
     body {
-        /* Example: Adjust the font size for desktop devices */
+        /* Ejemplo: Ajusta el tamaño de fuente para dispositivos de escritorio */
         font-size: 18px;
     }
-    /* Adjust the layout, margins, or other styles as needed for desktop view */
+    /* Ajusta el layout, márgenes, o cualquier otro estilo necesario para la vista de escritorio */
     .menunav {
         display: flex; /* Utiliza flexbox para organizar los elementos del menú */
         justify-content: center; /* Centra los elementos del menú horizontalmente */
-        padding: 20px 0; /* Añade padding vertical solamnete al menú */
+        padding: 20px 0; /* Padding vertical solo al menú */
     }
 }
+
 
 @font-face { 
     font-family: Ancizar Sans-regular; 
