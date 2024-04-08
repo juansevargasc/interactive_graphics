@@ -2,16 +2,20 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Los Mejores Hot Hatches del Año</title>
+    <title>Actividades</title>
     <link href="estilos.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
+    <!-- Permite volver al inicio de la página, usando el link ubicado abajo -->
     <a name="inicio"></a>
     <div class="contenido">
       <h1 class="titulo"><a href="index.html" target="_self">INICIO</a></h1>
 
       <!-- Menu presente en todas las páginas -->
+      <label for="checkbox-hamburguesa" class="icono-hamburguesa">&#9776;</label>
+      <input type="checkbox" id="checkbox-hamburguesa" class="checkbox-hamburguesa" />
       <nav class="menunav">
         <a class="botonMenu" href="introduccion.html" target="_self"
           >Introducción y presentación</a
@@ -28,8 +32,9 @@
       </nav>
 
       <!-- El núcleo del contenido al estilo blogpost, esta es la actividad principal de la página web. -->
-      <h1>Blog Post</h1>
-      <h2>Los Mejores Hot Hatches del Año</h2>
+      <h1>Actividades</h1>
+      <h2>Blog Post</h2>
+      <h3>Los Mejores Hot Hatches del Año</h3>
       <!-- Todos los párrafos clase 1 con formato para tner legibilidad-->
       <p class="uno">
         Este año, el panorama de los hot hatch se ha visto invadido por modelos
@@ -107,8 +112,8 @@
         manejo, que lo convierten en uno de los favoritos de la categoría.
       </p>
       <hr />
-
-      <a href="#inicio">Volver al inicio</a>
+      <!-- Permite volver al inicio de la página, usando el link ubicado abajo-->
+      <p><a href="#inicio">Volver al inicio</a></p>
     </div>
   </body>
 </html>
