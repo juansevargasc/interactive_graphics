@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Concesionarios de Autos en Colombia</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Contiene todo el contenido visible de la página -->
+    <div class="contenido">
+        <!-- Título de la página con enlace a la página principal -->
+        <h1 class="titulo"><a href="index.html">INICIO</a></h1>
+        
+        <!-- Menu presente en todas las páginas -->
+        <label for="checkbox-hamburguesa" class="icono-hamburguesa">&#9776;</label>
+        <input type="checkbox" id="checkbox-hamburguesa" class="checkbox-hamburguesa" />
+        <nav class="menunav">
+            <a class="botonMenu" href="introduccion.html">Introducción</a>
+            <a class="botonMenu" href="ubicacion.html">Ubicación</a>
+            <a class="botonMenu" href="personajes.html">Personajes</a>
+            <a class="botonMenu" href="mapa.html">Mapa de Concesionarios</a>
+            <a class="botonMenu" href="actividades.html">Actividades</a>
+            <a class="botonMenu" href="historia.html">Historia</a>
+            <a class="botonMenu" href="creditos.html">Créditos</a>
+        </nav>
+        <!-- Sección que introduce a los principales concesionarios en Colombia -->
+        <h2>Mapa de Concesionarios de Autos en Colombia</h2>
+       
+        <!-- Mapa: Se -->
+        <div id="mapa"></div>
+        
+    </div>
+
+    <!-- Derechos de autor  -->
+    <h6>&copy; Todos los Derechos Reservados</h6>
+
+    <!-- Incluye la biblioteca Leaflet.js desde un CDN -->
+    <!-- Leaflet.js es una biblioteca de JavaScript que permite crear mapas interactivos fácilmente -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="mapa.js"></script>
+
+</body>
+</html>
